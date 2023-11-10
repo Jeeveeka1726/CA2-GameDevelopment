@@ -7,8 +7,8 @@ export class UI {
     }
     draw(context){
         context.save();
-        context.shadowOffsetX = 2;
-        context.shadowOffsetY = 2;
+        context.shadowOffsetX = 1;
+        context.shadowOffsetY = 1;
         context.shadowColor = "white";
         context.shadowBlur = 0;
         context.font = this.fontSize + 'px '  + this.fontFamily;
@@ -31,7 +31,7 @@ export class UI {
                 context.fillText('YooHoo',this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize *  0.5 + 'px ' + this.fontFamily;
                 context.fillText('What are the creatures of the night afraid of? YOU!!!',this.game.width * 0.5, this.game.height * 0.5 + 20);
-                const playAgainButton = document.createElement('button');
+                var playAgainButton = document.createElement('button');
                 playAgainButton.textContent = 'Play Again';
                 playAgainButton.style.position = 'absolute';
                 playAgainButton.style.left = '50%';
@@ -41,6 +41,21 @@ export class UI {
                   resetGame();
                 });
                 document.body.appendChild(playAgainButton);
+
+                var quitButton = document.createElement('button');
+                quitButton.textContent = 'Quit';
+                quitButton.style.position = 'absolute';
+                quitButton.style.left = '50%';
+                quitButton.style.top = '65%';
+                quitButton.style.transform = 'translate(-50%, -50%)';
+                quitButton.addEventListener('click', function () {
+                  quitGame();
+                });
+                document.body.appendChild(quitButton);
+            
+                function quitGame() {
+                  window.location = "./index.html";
+                }
             
                 function resetGame() {
                   location.reload();
@@ -49,7 +64,7 @@ export class UI {
                 context.fillText('BooHoo',this.game.width * 0.5, this.game.height * 0.5 - 20);
                 context.font = this.fontSize *  0.7 + 'px ' + this.fontFamily;
                 context.fillText('Better luck next time',this.game.width * 0.5, this.game.height * 0.5 + 20);
-                const playAgainButton = document.createElement('button');
+                var playAgainButton = document.createElement('button');
                 playAgainButton.textContent = 'Play Again';
                 playAgainButton.style.position = 'absolute';
                 playAgainButton.style.left = '50%';
@@ -63,7 +78,7 @@ export class UI {
                 function resetGame() {
                   location.reload();
                 }
-                const quitButton = document.createElement('button');
+                var quitButton = document.createElement('button');
                 quitButton.textContent = 'Quit';
                 quitButton.style.position = 'absolute';
                 quitButton.style.left = '50%';

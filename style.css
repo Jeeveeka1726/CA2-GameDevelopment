@@ -6,7 +6,7 @@
 
 body{
     background-color: #9A9494;
-    font-family: ink free;
+    font-family: ink free;    
 }
 
 #shadowDogIcon{
@@ -164,13 +164,7 @@ h1{
     background-color: #F75E5E;
 }
 
-/* @media (max-width: 700px){
-    body{
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-} */
+
 
 
 
