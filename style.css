@@ -151,19 +151,25 @@ h1{
 }
 
 #instructions{
-    height: 90vh;
-    width: 190vh;
+    height: 80vh;
+    width: 90vw;
 }
 
 #back{
     height: 7vh;
-    width: 20vh;
-    position: absolute;
-    left: 170vh;
-    top: 85vh;
+    width: 10vw;
+    margin-left: 90vw;
+    margin-bottom: 1vh;
     background-color: #F75E5E;
 }
 
+@media (max-width:768px) {
+    .everything{
+        position: absolute;
+        top: 30vh;
+    }
+    
+}
 
 
 

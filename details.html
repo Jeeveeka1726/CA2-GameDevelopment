@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="spider">
-        <img id="spider1" src="./assets/spider-removebg-preview.png" alt="spider1">
-        <img id="spider2" src="./assets/spider-removebg-preview.png" alt="spider2">
-        <img id="spider3" src="./assets/spider-removebg-preview.png" alt="spider3">
+    <div class="everything">
+        <div class="spider">
+            <img id="spider1" src="./assets/spider-removebg-preview.png" alt="spider1">
+            <img id="spider2" src="./assets/spider-removebg-preview.png" alt="spider2">
+            <img id="spider3" src="./assets/spider-removebg-preview.png" alt="spider3">
+        </div>
+        <input type="text" id="nameDetails" placeholder="PLAYER'S NAME"></input>
+        <div id="go">
+            <button id="goButton" onclick="go()" >GO</button>
+        </div>
+        <img id="worms" src="./assets/enemy_worm.png" alt="worms">
     </div>
-    <input type="text" id="nameDetails" placeholder="PLAYER'S NAME"></input>
-    <div id="go">
-        <button id="goButton" onclick="go()" >GO</button>
-    </div>
-    <img id="worms" src="./assets/enemy_worm.png" alt="worms">
 </body>
 </html>
 <script>
