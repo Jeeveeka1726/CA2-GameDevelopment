@@ -4,24 +4,176 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #9A9494;
+    font-family: ink free;
+}
+
 #shadowDogIcon{
-    height: 120px;
-    width: 150px;
+    height: 10vw;
+    width: 15vw;
+}
+
+h1{
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 5vw;
+    position: relative;
+    z-index: 1;
 }
 
 #ghost2{
-    height: 120px;
-    width: 190px;
+    height: 10vw;
+    width: 15vw;
+}
+
+#background{
+    position: absolute;
+    height: 13vw;
+    width: 55vw;
+    margin-left: 23vw ;
+    border-radius: 236vw;
+    background-color: #F75E5E;
+    z-index: 0;
 }
 
 #walkingZombie{
-    width: 1100px;
-    margin-top: 170px;
-    margin-left: 170px;
+    width: 70vw;
+    margin-top: 5vw;
+    margin-left: 30vw;
 }
 
 #top{
     display: flex;
     justify-content: space-between;
-    margin: 30px 90px 50px 90px;
+    margin: 5vw 6vw 4vw 8vw;
 }
+
+#button{
+    display: flex;
+    justify-content: center;
+    margin: 1vw;
+    position: relative;
+    z-index: 1;
+}
+
+#playButton{
+    margin-right: 7vw;
+    height: 3vw;
+    width: 7vw;
+    background-color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+    font-family: ink free;
+    font-size: 2vw;
+}
+
+#instructionsButton{
+    height: 3vw;
+    width: 12vw;
+    background-color: #D9D9D9;
+    border: none;
+    cursor: pointer;
+    font-family: ink free;
+    font-size: 1.5vw;
+}
+
+.spider{
+    opacity: 70%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+#spider1{
+    height: 20vw;
+}
+
+#spider2{
+    height: 10vw;
+}
+
+#spider3{
+    height: 18vw;
+}
+
+#go{
+    display: flex;
+    justify-content: center;
+}
+
+#nameDetails{
+    height: 7vw;
+    width: 50vw;
+    border-radius: 5vw;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    margin-left: 27vw;
+    z-index: 1;
+    text-align: center;
+    font-size: 4vw;
+    font-family: Juice ITC;
+    font-weight: lighter;
+    border: none;
+}
+
+#goButton{
+    height: 4vw;
+    width: 17vw;
+    border-radius: 7vw;
+    background-color: #FAA4A4;
+    font-family: Ink free;
+    font-size: 3vw;
+    cursor: pointer;
+    margin-top: 9vw;
+    margin-left: 7vw;   
+}
+    
+#worms{
+    width: 50vw;
+    height: 9vw;
+    margin-top: 5vw;
+    margin-left: 50vw;
+}
+
+#canvas1{
+    border: 5px solid black ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width:100%;
+    max-height: 100%;
+}
+
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #enemy_fly, #enemy_spider_big, #enemy_plant, #collisionAnimation, #fire, #lives{
+    display: none;
+}
+
+#instructions{
+    height: 90vh;
+    width: 190vh;
+}
+
+#back{
+    height: 7vh;
+    width: 20vh;
+    position: absolute;
+    left: 170vh;
+    top: 85vh;
+    background-color: #F75E5E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
