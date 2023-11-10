@@ -36,6 +36,10 @@ export class UI {
                 playAgainButton.style.position = 'absolute';
                 playAgainButton.style.left = '50%';
                 playAgainButton.style.top = '60%';
+                playAgainButton.style.backgroundColor  = 'white';
+                playAgainButton.style.borderRadius  = '50%';
+                playAgainButton.style.height = '30px';
+                playAgainButton.style.width  = '70px';
                 playAgainButton.style.transform = 'translate(-50%, -50%)';
                 playAgainButton.addEventListener('click', function () {
                   resetGame();
@@ -47,6 +51,8 @@ export class UI {
                 quitButton.style.position = 'absolute';
                 quitButton.style.left = '50%';
                 quitButton.style.top = '65%';
+                quitButton.style.backgroundColor  = 'green';
+                quitButton.style.borderRadius  = '50%';
                 quitButton.style.transform = 'translate(-50%, -50%)';
                 quitButton.addEventListener('click', function () {
                   quitGame();
@@ -69,6 +75,10 @@ export class UI {
                 playAgainButton.style.position = 'absolute';
                 playAgainButton.style.left = '50%';
                 playAgainButton.style.top = '60%';
+                playAgainButton.style.backgroundColor  = 'green';
+                playAgainButton.style.borderRadius  = '50%';
+                playAgainButton.style.height = '30px';
+                playAgainButton.style.width  = '70px';
                 playAgainButton.style.transform = 'translate(-50%, -50%)';
                 playAgainButton.addEventListener('click', function () {
                   resetGame();
@@ -83,6 +93,10 @@ export class UI {
                 quitButton.style.position = 'absolute';
                 quitButton.style.left = '50%';
                 quitButton.style.top = '65%';
+                quitButton.style.backgroundColor  = 'red';
+                quitButton.style.borderRadius  = '50%';
+                quitButton.style.height = '30px';
+                quitButton.style.width  = '70px';
                 quitButton.style.transform = 'translate(-50%, -50%)';
                 quitButton.addEventListener('click', function () {
                   quitGame();
